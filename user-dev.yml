@@ -1,6 +1,7 @@
-server:
-  servlet:
-    context-path: /user
+#config-server ，eureka 不必要配置 context-path,配置了需要其他配置
+# server:
+#   servlet:
+#     context-path: /user    
 eureka:
   client:
     service-url:
