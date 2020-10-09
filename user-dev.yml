@@ -16,41 +16,17 @@ spring:
 
   #mysql 配置
   datasource:
-    druid:
-      stat-view-servlet:
-        enabled: true
-        loginUsername: admin
-        loginPassword: 88888888
-      web-stat-filter:
-        enabled: true
-    dynamic:
-      druid:
-        initial-size: 5
-        min-idle: 5
-        maxActive: 20
-        maxWait: 60000
-        timeBetweenEvictionRunsMillis: 60000
-        minEvictableIdleTimeMillis: 300000
-        validationQuery: SELECT 1 FROM DUAL
-        testWhileIdle: true
-        testOnBorrow: false
-        testOnReturn: false
-        poolPreparedStatements: true
-        maxPoolPreparedStatementPerConnectionSize: 20
-        filters: stat,wall,slf4j
-        connectionProperties: druid.stat.mergeSql\=true;druid.stat.slowSqlMillis\=5000
-      datasource:
-        master:
-          url: jdbc:mysql://47.98.112.186:3306/learn
-          username: root
-          password: 123456
-          driver-class-name: com.mysql.jdbc.Driver
-          # 多数据源配置
-          #multi-datasource1:
-          #url: jdbc:mysql:
-          #username: root
-          #password: root
-          #driver-class-name: com.mysql.jdbc.Driver
+    master:
+      url: jdbc:mysql://47.98.112.186:3306/learn
+      username: root
+      password: 123456
+      driver-class-name: com.mysql.jdbc.Driver
+      # 多数据源配置
+      #multi-datasource1:
+      #url: jdbc:mysql:
+      #username: root
+      #password: root
+      #driver-class-name: com.mysql.jdbc.Driver
   #redis 配置
   redis:
     database: 0
