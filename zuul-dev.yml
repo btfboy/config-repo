@@ -12,3 +12,9 @@ spring：
     port: 5672
     username: guest
     password: guest
+# 暴露actuator
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
