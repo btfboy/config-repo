@@ -6,3 +6,9 @@ zuul:
     api-b:
       path: /api-b/**
       serviceId: feign
+spring：
+  rabbitmq:
+    host: 47.98.112.186
+    port: 5672
+    username: guest
+    password: guest
