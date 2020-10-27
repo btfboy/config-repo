@@ -1,0 +1,13 @@
+spring:
+  zipkin:
+    base-url: http://47.98.112.186:9411/
+    sender:
+      type: web
+  sleuth:
+    sampler:
+      probability: 1
+  rabbitmq:
+    host: 47.98.112.186
+    port: 5672
+    username: guest
+    password: guest
