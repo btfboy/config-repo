@@ -6,11 +6,11 @@ spring:
   sleuth:
     sampler:
       probability: 1
- rabbitmq:
-  host: 47.98.112.186
-  port: 5672
-  username: guest
-  password: guest
+  rabbitmq:
+    host: 47.98.112.186
+    port: 5672
+    username: guest
+    password: guest
 feign:
   hystrix:
     enabled: true
