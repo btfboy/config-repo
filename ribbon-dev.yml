@@ -9,3 +9,8 @@ spring:
 hystrix:
   metrics:
     enabled: true
+rabbitmq:
+  host: 47.98.112.186
+  port: 5672
+  username: guest
+  password: guest
